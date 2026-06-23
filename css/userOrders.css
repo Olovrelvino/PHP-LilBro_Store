@@ -1,0 +1,170 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Judul Halaman */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tombol Kembali ke Home (Ikon) */
+.button-container {
+    margin: 10px 0 20px 270px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home-icon {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 20%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-icon:hover {
+    background-color: #0056b3;
+    color: #e2e6ea;
+}
+
+/* Tabel Pesanan */
+table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Link Lihat Detail */
+table td a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+table td a:hover {
+    color: #0056b3;
+}
+
+/* Status Pesanan */
+.status-pending {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.status-confirmed {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+/* Pesan Tidak Ada Pesanan */
+.no-orders {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin: 20px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .button-container {
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    .home-icon {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .button-container {
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    .home-icon {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .no-orders {
+        font-size: 16px;
+    }
+}
